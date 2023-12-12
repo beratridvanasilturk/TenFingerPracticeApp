@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA13E35C2B28AFF3007F4E1E /* clickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */; };
+		EA13E35E2B28B180007F4E1E /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA13E35D2B28B180007F4E1E /* Righteous-Regular.ttf */; };
 		EA9A9BA52B2624C4003F4FDF /* TenFingerPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */; };
 		EA9A9BA72B2624C4003F4FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A9BA62B2624C4003F4FDF /* ContentView.swift */; };
 		EA9A9BA92B2624C7003F4FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9A9BA82B2624C7003F4FDF /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 
 /* Begin PBXFileReference section */
 		EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickSound.mp3; sourceTree = "<group>"; };
+		EA13E35D2B28B180007F4E1E /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		EA3537442B28EE6C00C0B104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EA9A9BA12B2624C4003F4FDF /* TenFingerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenFingerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenFingerPracticeApp.swift; sourceTree = "<group>"; };
 		EA9A9BA62B2624C4003F4FDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,10 +56,12 @@
 		EA9A9BA32B2624C4003F4FDF /* TenFingerPractice */ = {
 			isa = PBXGroup;
 			children = (
+				EA3537442B28EE6C00C0B104 /* Info.plist */,
 				EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */,
 				EA9A9BA62B2624C4003F4FDF /* ContentView.swift */,
 				EA9A9BA82B2624C7003F4FDF /* Assets.xcassets */,
 				EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */,
+				EA13E35D2B28B180007F4E1E /* Righteous-Regular.ttf */,
 				EA9A9BAA2B2624C7003F4FDF /* Preview Content */,
 			);
 			path = TenFingerPractice;
@@ -130,6 +135,7 @@
 			files = (
 				EA9A9BAC2B2624C7003F4FDF /* Preview Assets.xcassets in Resources */,
 				EA13E35C2B28AFF3007F4E1E /* clickSound.mp3 in Resources */,
+				EA13E35E2B28B180007F4E1E /* Righteous-Regular.ttf in Resources */,
 				EA9A9BA92B2624C7003F4FDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +280,7 @@
 				DEVELOPMENT_TEAM = 899LNTN484;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TenFingerPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -304,7 +310,7 @@
 				DEVELOPMENT_TEAM = 899LNTN484;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TenFingerPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;

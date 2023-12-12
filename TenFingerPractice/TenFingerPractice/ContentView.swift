@@ -46,7 +46,7 @@ struct ContentView: View {
         VStack {
             Text("Target Letter:")
             Text(targetLetter.uppercased())
-                .font(.title)
+                .font(.custom("Righteous-Regular", size: 38))
                 .bold()
                 .foregroundColor(.purple)
             VStack{
@@ -73,7 +73,9 @@ struct ContentView: View {
                             isTappedW.toggle()
                             myLetter = "w"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedW.toggle()
                             }
@@ -87,7 +89,9 @@ struct ContentView: View {
                             isTappedE.toggle()
                             myLetter = "e"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedE.toggle()
                             }
@@ -101,7 +105,9 @@ struct ContentView: View {
                             isTappedR.toggle()
                             myLetter = "r"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedR.toggle()
                             }
@@ -115,7 +121,9 @@ struct ContentView: View {
                             isTappedT.toggle()
                             myLetter = "t"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedT.toggle()
                             }
@@ -132,7 +140,9 @@ struct ContentView: View {
                             isTappedA.toggle()
                             myLetter = "a"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedA.toggle()
                             }
@@ -146,7 +156,9 @@ struct ContentView: View {
                             isTappedS.toggle()
                             myLetter = "s"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedS.toggle()
                             }
@@ -160,7 +172,9 @@ struct ContentView: View {
                             isTappedD.toggle()
                             myLetter = "d"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedD.toggle()
                             }
@@ -174,7 +188,9 @@ struct ContentView: View {
                             isTappedF.toggle()
                             myLetter = "f"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedF.toggle()
                             }
@@ -188,7 +204,9 @@ struct ContentView: View {
                             isTappedG.toggle()
                             myLetter = "g"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedG.toggle()
                             }
@@ -205,7 +223,9 @@ struct ContentView: View {
                             isTappedZ.toggle()
                             myLetter = "z"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedZ.toggle()
                             }
@@ -219,7 +239,9 @@ struct ContentView: View {
                             isTappedX.toggle()
                             myLetter = "x"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedX.toggle()
                             }
@@ -233,7 +255,9 @@ struct ContentView: View {
                             isTappedC.toggle()
                             myLetter = "c"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedC.toggle()
                             }
@@ -247,7 +271,9 @@ struct ContentView: View {
                             isTappedV.toggle()
                             myLetter = "v"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedV.toggle()
                             }
@@ -261,7 +287,9 @@ struct ContentView: View {
                             isTappedB.toggle()
                             myLetter = "b"
                             checkLetter()
-                            soundPlayer!.play()
+                            if let player = soundPlayer {
+                                player.play()
+                            }
                             withAnimation {
                                 isTappedB.toggle()
                             }
