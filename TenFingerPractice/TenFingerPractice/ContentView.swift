@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     
@@ -24,6 +25,18 @@ struct ContentView: View {
     @State private var isTappedC = false
     @State private var isTappedV = false
     @State private var isTappedB = false
+    
+    var soundPlayer: AVAudioPlayer?
+    
+    init() {
+        if let soundURL = Bundle.main.url(forResource: "clickSound", withExtension: "mp3") {
+            do {
+                soundPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            } catch {
+                print("Ses dosyasını yüklerken bir hata oluştu: \(error.localizedDescription)")
+            }
+        }
+    }
     
     @State var targetLetter = ""
     @State var myLetter = ""
@@ -46,9 +59,10 @@ struct ContentView: View {
                             isTappedQ.toggle()
                             myLetter = "q"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
                                 isTappedQ.toggle()
-                                           }
+                            }
                         }
                         .padding(8)
                     Image("w")
@@ -59,9 +73,10 @@ struct ContentView: View {
                             isTappedW.toggle()
                             myLetter = "w"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedW.toggle()
-                                           }
+                                isTappedW.toggle()
+                            }
                         }
                         .padding(8)
                     Image("e")
@@ -72,9 +87,10 @@ struct ContentView: View {
                             isTappedE.toggle()
                             myLetter = "e"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedE.toggle()
-                                           }
+                                isTappedE.toggle()
+                            }
                         }
                         .padding(8)
                     Image("r")
@@ -85,9 +101,10 @@ struct ContentView: View {
                             isTappedR.toggle()
                             myLetter = "r"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedR.toggle()
-                                           }
+                                isTappedR.toggle()
+                            }
                         }
                         .padding(8)
                     Image("t")
@@ -98,9 +115,10 @@ struct ContentView: View {
                             isTappedT.toggle()
                             myLetter = "t"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedT.toggle()
-                                           }
+                                isTappedT.toggle()
+                            }
                         }
                         .padding(8)
                 }
@@ -114,9 +132,10 @@ struct ContentView: View {
                             isTappedA.toggle()
                             myLetter = "a"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedA.toggle()
-                                           }
+                                isTappedA.toggle()
+                            }
                         }
                         .padding(8)
                     Image("s")
@@ -127,9 +146,10 @@ struct ContentView: View {
                             isTappedS.toggle()
                             myLetter = "s"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedS.toggle()
-                                           }
+                                isTappedS.toggle()
+                            }
                         }
                         .padding(8)
                     Image("d")
@@ -140,9 +160,10 @@ struct ContentView: View {
                             isTappedD.toggle()
                             myLetter = "d"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedD.toggle()
-                                           }
+                                isTappedD.toggle()
+                            }
                         }
                         .padding(8)
                     Image("f")
@@ -153,9 +174,10 @@ struct ContentView: View {
                             isTappedF.toggle()
                             myLetter = "f"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedF.toggle()
-                                           }
+                                isTappedF.toggle()
+                            }
                         }
                         .padding(8)
                     Image("g")
@@ -166,9 +188,10 @@ struct ContentView: View {
                             isTappedG.toggle()
                             myLetter = "g"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedG.toggle()
-                                           }
+                                isTappedG.toggle()
+                            }
                         }
                         .padding(8)
                 }
@@ -182,9 +205,10 @@ struct ContentView: View {
                             isTappedZ.toggle()
                             myLetter = "z"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedZ.toggle()
-                                           }
+                                isTappedZ.toggle()
+                            }
                         }
                         .padding(8)
                     Image("x")
@@ -195,9 +219,10 @@ struct ContentView: View {
                             isTappedX.toggle()
                             myLetter = "x"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedX.toggle()
-                                           }
+                                isTappedX.toggle()
+                            }
                         }
                         .padding(8)
                     Image("c")
@@ -208,9 +233,10 @@ struct ContentView: View {
                             isTappedC.toggle()
                             myLetter = "c"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedC.toggle()
-                                           }
+                                isTappedC.toggle()
+                            }
                         }
                         .padding(8)
                     Image("v")
@@ -221,9 +247,10 @@ struct ContentView: View {
                             isTappedV.toggle()
                             myLetter = "v"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedV.toggle()
-                                           }
+                                isTappedV.toggle()
+                            }
                         }
                         .padding(8)
                     Image("b")
@@ -234,9 +261,10 @@ struct ContentView: View {
                             isTappedB.toggle()
                             myLetter = "b"
                             checkLetter()
+                            soundPlayer!.play()
                             withAnimation {
-                                               isTappedB.toggle()
-                                           }
+                                isTappedB.toggle()
+                            }
                         }
                         .padding(8)
                 }

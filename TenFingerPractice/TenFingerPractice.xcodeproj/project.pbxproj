@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA13E35C2B28AFF3007F4E1E /* clickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */; };
 		EA9A9BA52B2624C4003F4FDF /* TenFingerPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */; };
 		EA9A9BA72B2624C4003F4FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A9BA62B2624C4003F4FDF /* ContentView.swift */; };
 		EA9A9BA92B2624C7003F4FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9A9BA82B2624C7003F4FDF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickSound.mp3; sourceTree = "<group>"; };
 		EA9A9BA12B2624C4003F4FDF /* TenFingerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenFingerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenFingerPracticeApp.swift; sourceTree = "<group>"; };
 		EA9A9BA62B2624C4003F4FDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				EA9A9BA42B2624C4003F4FDF /* TenFingerPracticeApp.swift */,
 				EA9A9BA62B2624C4003F4FDF /* ContentView.swift */,
 				EA9A9BA82B2624C7003F4FDF /* Assets.xcassets */,
+				EA13E35B2B28AFF3007F4E1E /* clickSound.mp3 */,
 				EA9A9BAA2B2624C7003F4FDF /* Preview Content */,
 			);
 			path = TenFingerPractice;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9A9BAC2B2624C7003F4FDF /* Preview Assets.xcassets in Resources */,
+				EA13E35C2B28AFF3007F4E1E /* clickSound.mp3 in Resources */,
 				EA9A9BA92B2624C7003F4FDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
