@@ -26,6 +26,9 @@ struct ContentView: View {
     @State private var isTappedV = false
     @State private var isTappedB = false
     
+    @State var targetLetter = ""
+    @State var myLetter = ""
+    @State var letterArray = ["q","w","e","r","t","g", "f","d","s","a","z","x","c","v","b"]
     var soundPlayer: AVAudioPlayer?
     
     init() {
@@ -37,10 +40,6 @@ struct ContentView: View {
             }
         }
     }
-    
-    @State var targetLetter = ""
-    @State var myLetter = ""
-    @State var letterArray = ["q","w","e","r","t","g", "f","d","s","a","z","x","c","v","b"]
     
     var body: some View {
         VStack {
