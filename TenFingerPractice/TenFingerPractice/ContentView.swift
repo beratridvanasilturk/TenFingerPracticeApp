@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 import AVFoundation
 
 struct ContentView: View {
@@ -304,6 +305,9 @@ struct ContentView: View {
     func checkLetter() {
         if myLetter == targetLetter {
             repeatLetter()
+        } else {
+            Haptics.shared.play(.light)
+            print("🐇 Haptics ON")
         }
     }
     func repeatLetter() {
